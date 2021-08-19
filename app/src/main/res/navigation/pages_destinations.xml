@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pages"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="brax.quality.nutridget.Home"
+        android:label="@string/homeLabel"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_profileSettings"
+            app:destination="@id/profileSettings" />
+        <action
+            android:id="@+id/action_home2_to_stats"
+            app:destination="@id/stats" />
+        <action
+            android:id="@+id/action_home2_to_newMeal"
+            app:destination="@id/newMeal" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettings"
+        android:name="brax.quality.nutridget.ProfileSettings"
+        android:label="@string/profileSettingsLabel"
+        tools:layout="@layout/fragment_profile_settings" >
+        <action
+            android:id="@+id/action_profileSettings_to_favorites"
+            app:destination="@id/favorites" />
+    </fragment>
+    <fragment
+        android:id="@+id/favorites"
+        android:name="brax.quality.nutridget.Favorites"
+        android:label="@string/favoritesLabel"
+        tools:layout="@layout/fragment_favorites" />
+    <fragment
+        android:id="@+id/newMeal"
+        android:name="brax.quality.nutridget.NewMeal"
+        android:label="@string/newMealLabel"
+        tools:layout="@layout/fragment_new_meal" />
+    <fragment
+        android:id="@+id/stats"
+        android:name="brax.quality.nutridget.Stats"
+        android:label="@string/statsLabel"
+        tools:layout="@layout/fragment_stats" />
+</navigation>

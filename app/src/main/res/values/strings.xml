@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">nutridget</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homeLabel">Home</string>
+    <string name="profileSettingsLabel">Profile</string>
+    <string name="favoritesLabel">Favorites</string>
+    <string name="newMealLabel">New Meal</string>
+    <string name="statsLabel">Stats</string>
+    <string name="newMealActionButton">start a meal</string>
+    <string name="home_dailytotal_title_big">1170 / 2890</string>
+</resources>
